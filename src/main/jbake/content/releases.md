@@ -6,6 +6,10 @@ tableOfContents=false
 ~~~~~~
 This is a list of all our releases, available from our [downloads](/downloads.cgi) page.
 
+## July 2026
+
+* Event Impl 4.4.2 (6th) 
+
 ## June 2026
 
 * Feature Model Analyser 2.0.16, MCP Server Contributions 0.2.0 (2nd)
