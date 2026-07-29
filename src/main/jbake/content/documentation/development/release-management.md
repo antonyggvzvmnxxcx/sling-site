@@ -8,7 +8,7 @@ tags=development,pmc,release
 
 ## Prerequisites
 
-* To prepare or perform a release you *MUST BE* at least an Apache Sling Committer. Promoting a release to `dist.apache.org` additionally requires PMC membership; a non-PMC committer asks a PMC member to perform that single step (the Committer CLI's `[RESULT]` email does this automatically).
+* To prepare or perform a release you *MUST BE* at least an Apache Sling Committer. Uploading a release to `dist.apache.org` additionally requires PMC membership, and it must happen before the artifacts are promoted to Maven Central; a non-PMC committer therefore asks a PMC member to finalize the release (the Committer CLI's `[RESULT]` email does this automatically).
 * Update to the most recent [Sling parent POM](https://github.com/apache/sling-parent) before releasing.
 * Each release must be signed, see _Appendix A_ below about creating and registering your key.
 * Make sure you have all [Apache servers](https://maven.apache.org/developers/committer-settings.html) defined in your `settings.xml`.
@@ -117,7 +117,7 @@ After at least 72 hours and three binding +1 votes, send the result email:
 
 PMC membership is detected automatically from your ASF id: a PMC member's email states they will copy
 the release to the dist directory themselves; a non-PMC release manager's email asks a PMC member to
-perform that (PMC-only) step.
+finalize the release, since the dist upload comes first and is PMC-only.
 
 If the vote does not pass, drop the staging repository and delete the tag, then start over with a new
 version (see [Canceling the Release](#canceling-the-release)):
@@ -129,9 +129,11 @@ version (see [Canceling the Release](#canceling-the-release)):
 
     $cli release finalize -r <REPO_ID> -x AUTO
 
-`finalize` runs, in order: promote to Maven Central, update `dist.apache.org` (only when you are a
-PMC member — the previous version to remove is detected automatically), create the next JIRA version
-and move unresolved issues, mark the JIRA version as released, and update the Apache Reporter.
+`finalize` runs, in order: update `dist.apache.org` (only when you are a PMC member — the previous
+version to remove is detected automatically), promote to Maven Central, create the next JIRA version
+and move unresolved issues, mark the JIRA version as released, and update the Apache Reporter. The
+dist upload runs first because it is the only step that needs the staging repository, which promoting
+to Maven Central drops. A JIRA pre-flight check runs before any of these irreversible steps.
 
 Afterwards update the website (releases / downloads / news) as described in
 [Promoting the Release](#promoting-the-release); the website diff can be generated with:
@@ -268,7 +270,7 @@ If the vote is successful, post the result to the dev list - for example:
     I will copy this release to the Sling dist directory and
     promote the artifacts to the central Maven repository.
 
-If you are not a PMC member you cannot upload to `dist.apache.org` yourself, so replace the closing line with a request for a PMC member to do it, for example: *"I will promote the artifacts to the central Maven repository. As I am not a PMC member, can a PMC member please copy this release to the Sling dist directory?"* (the Committer CLI generates the correct variant automatically.)
+If you are not a PMC member you cannot upload to `dist.apache.org` yourself, and it must be uploaded *before* the artifacts are promoted to Maven Central — so replace the closing line with a request for a PMC member to finalize the release, for example: *"The release still needs to be finalized: the artifacts must first be copied to the Sling dist directory and only then promoted to the central Maven repository. As that first step requires PMC membership, which I do not have, can a PMC member please finalize this release?"* (the Committer CLI generates the correct variant automatically.)
 
 Be sure to include all votes in the list and indicate which votes were binding. Consider \-1 votes very carefully. While there is technically no veto on release votes, there may be reasons for people to vote \-1. So sometimes it may be better to cancel a release when someone, especially a member of the PMC, votes \-1.
 
