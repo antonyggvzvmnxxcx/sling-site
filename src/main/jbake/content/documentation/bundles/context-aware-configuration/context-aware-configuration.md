@@ -270,6 +270,9 @@ Whenever configuration data is read or written from the configuration resources 
 * [Context-Aware Configuration - Override][override]
 * [Sling Context-Aware Configuration - Talk from adaptTo() 2016](https://adapt.to/2016/en/schedule/sling-context-aware-configuration.html)
 
+# Source Code
+
+The relevant repositories have group label `caconfig` and are linked at <https://sling.apache.org/repolist.html>.
 
 [default-impl]: https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-default-implementation.html
 [javadoc-component]: https://sling.apache.org/apidocs/latest/org/apache/sling/caconfig/annotation/Configuration.html
