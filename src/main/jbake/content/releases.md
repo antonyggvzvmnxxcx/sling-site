@@ -8,6 +8,7 @@ This is a list of all our releases, available from our [downloads](/downloads.cg
 
 ## July 2026
 
+* Servlets Resolver 3.0.8 (31st)
 * Feature Model Analyser 2.0.18 (17th)
 * Event Impl 4.4.2 (6th) 
 
