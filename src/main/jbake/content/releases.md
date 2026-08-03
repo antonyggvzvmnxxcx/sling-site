@@ -6,11 +6,15 @@ tableOfContents=false
 ~~~~~~
 This is a list of all our releases, available from our [downloads](/downloads.cgi) page.
 
+## August 2026
+
+* GraphQL Schema Aggregator 0.0.2
+
 ## July 2026
 
 * Servlets Resolver 3.0.8 (31st)
 * Feature Model Analyser 2.0.18 (17th)
-* Event Impl 4.4.2 (6th) 
+* Event Impl 4.4.2 (6th)
 
 ## June 2026
 
@@ -201,7 +205,7 @@ This is a list of all our releases, available from our [downloads](/downloads.cg
 * Models Implementation 1.7.4 (18th)
 * Parent 61 and Bundle Parent 61 (4th)
 * Servlets Resolver 2.11.4 (1st)
- 
+
 ## October 2024
 
 * Engine 2.15.18, Models Implementation 1.7.2 (29th)
@@ -212,7 +216,7 @@ This is a list of all our releases, available from our [downloads](/downloads.cg
 
 ## September 2024
 
-* OSGi Feature Maven Plugin 1.8.4 (19th) 
+* OSGi Feature Maven Plugin 1.8.4 (19th)
 * Scripting Core 2.4.10 (5th)
 
 ## August 2024
