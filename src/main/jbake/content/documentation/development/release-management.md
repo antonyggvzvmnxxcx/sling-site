@@ -356,9 +356,9 @@ Go to [Manage Versions](https://issues.apache.org/jira/plugins/servlet/project-c
 
 Also create a new version X.Y.Z+2, if that hasn't already been done.
 
-And keep the versions sorted, so when adding a new version moved it down to just above the previous versions.
-
 Close all issues associated with the released version.
+
+All of the above is performed by the Committer CLI's `finalize` command. See [Finalize](#4-finalize).
 
 ## Update the Sling Starter Module
 
