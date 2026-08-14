@@ -71,7 +71,7 @@ recommended way to run a release.
 
 1. Install Docker and pull the image (or build it from the [CLI repository](https://github.com/apache/sling-org-apache-sling-committer-cli)):
 
-        docker pull apache/sling-cli
+        docker pull apache/sling-committer-cli
 
 2. Create a `docker-env` file with your ASF credentials (used for Nexus, JIRA, Whimsy and the mailing lists):
 
@@ -82,7 +82,7 @@ Together with the GPG / `settings.xml` configuration from the [Prerequisites](#p
 that is all that is required. Every command runs in `DRY_RUN` mode by default (it only prints what it
 would do); append `-x AUTO` to actually perform the action. The examples below use this shorthand:
 
-    cli="docker run --rm --env-file=./docker-env apache/sling-cli"
+    cli="docker run --rm --env-file=./docker-env apache/sling-committer-cli"
 
 ### 1. Stage the release (Maven)
 
