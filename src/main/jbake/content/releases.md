@@ -8,6 +8,7 @@ This is a list of all our releases, available from our [downloads](/downloads.cg
 
 ## August 2026
 
+* JCR DavEx 1.3.14
 * GraphQL Schema Aggregator 0.0.2
 
 ## July 2026
