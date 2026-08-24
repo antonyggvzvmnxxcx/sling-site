@@ -35,7 +35,7 @@ def slingApplication=[
 def mavenPlugins=[
   "JSPC Maven Plugin|jspc-maven-plugin|2.3.4|Y",
   "Maven Launchpad Plugin|maven-launchpad-plugin|2.3.4|Y",
-  "Scripting Bundle Maven Plugin|scriptingbundle-maven-plugin|0.5.2|Y",
+  "Scripting Bundle Maven Plugin|scriptingbundle-maven-plugin|0.5.4|Y",
   "Sling Maven Plugin|sling-maven-plugin|3.0.4|Y",
   "OSGi Feature Maven Plugin|slingfeature-maven-plugin|1.9.4|Y",
   "Sling Feature Converter Maven Plugin|sling-feature-converter-maven-plugin|1.0.12|Y",
@@ -50,7 +50,7 @@ def bndPlugins=[
   "Context-Aware Configuration bnd Plugin|org.apache.sling.caconfig.bnd-plugin|1.0.2|Y",
   "Models bnd Plugin|org.apache.sling.bnd.models|1.0.0|Y",
   "bnd Remove Parameters from OSGi Headers Plugin|org.apache.sling.bnd.plugin.headers.parameters.remove|1.0.0|Y",
-  "Scripting Bundle (Maven) Plugin|scriptingbundle-maven-plugin|0.5.2|Y",
+  "Scripting Bundle (Maven) Plugin|scriptingbundle-maven-plugin|0.5.4|Y",
   "Provider Type Checker Bnd Plugin|org.apache.sling.providertype.bnd-plugin|1.0.0|Y"
 ]
 
@@ -236,7 +236,7 @@ def bundles=[
   "Servlet Helpers|org.apache.sling.servlet-helpers|2.0.0|Y|jar",
   "Servlets Get|org.apache.sling.servlets.get|3.0.0|Y|jar",
   "Servlets Post|org.apache.sling.servlets.post|3.0.2|Y|jar",
-  "Servlets Resolver|org.apache.sling.servlets.resolver|3.0.8|Y|jar",
+  "Servlets Resolver|org.apache.sling.servlets.resolver|3.0.10|Y|jar",
   "Settings|org.apache.sling.settings|1.5.0|Y|jar",
   "Sitemap|org.apache.sling.sitemap|1.0.6|Y|jar",
   "Slf4j MDC Filter|org.apache.sling.extensions.slf4j.mdc|1.0.0|Y|jar",
