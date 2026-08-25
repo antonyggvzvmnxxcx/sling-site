@@ -8,7 +8,7 @@ This is a list of all our releases, available from our [downloads](/downloads.cg
 
 ## August 2026
 
-* Security (25th)
+* Security 1.3.2 (25th)
 * Scripting Bundle Maven Plugin 0.5.4, Servlets Resolver 2.11.14, Servlets Resolver 3.0.10, GraphQL Schema Aggregator 0.0.4 (24th)
 * Apache Sling Resource Resolver 1.12.18
 * Apache Sling Resource Resolver 2.0.6
